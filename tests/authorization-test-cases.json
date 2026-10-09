@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TC-01",
+    "action": "s3:GetObject",
+    "resource": "arn:aws:s3:::example-research-data/sample.csv",
+    "insecure_expected": "Allow",
+    "least_privilege_expected": "Allow"
+  },
+  {
+    "id": "TC-02",
+    "action": "s3:DeleteObject",
+    "resource": "arn:aws:s3:::example-research-data/sample.csv",
+    "insecure_expected": "Allow",
+    "least_privilege_expected": "ImplicitDeny"
+  },
+  {
+    "id": "TC-03",
+    "action": "s3:GetObject",
+    "resource": "arn:aws:s3:::example-finance-data/payroll.csv",
+    "insecure_expected": "Allow",
+    "least_privilege_expected": "ImplicitDeny"
+  },
+  {
+    "id": "TC-04",
+    "action": "s3:PutObject",
+    "resource": "arn:aws:s3:::example-research-data/sample.csv",
+    "insecure_expected": "Allow",
+    "least_privilege_expected": "ImplicitDeny"
+  },
+  {
+    "id": "TC-05",
+    "action": "s3:ListBucket",
+    "resource": "arn:aws:s3:::example-research-data",
+    "insecure_expected": "Allow",
+    "least_privilege_expected": "ImplicitDeny"
+  }
+]

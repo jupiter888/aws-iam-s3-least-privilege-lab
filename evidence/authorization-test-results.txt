@@ -1,0 +1,22 @@
+TC-01: PASS | Insecure=Allow | LeastPrivilege=Allow
+TC-02: PASS | Insecure=Allow | LeastPrivilege=ImplicitDeny
+TC-03: PASS | Insecure=Allow | LeastPrivilege=ImplicitDeny
+TC-04: PASS | Insecure=Allow | LeastPrivilege=ImplicitDeny
+TC-05: PASS | Insecure=Allow | LeastPrivilege=ImplicitDeny
+
+Results: 5/5 passed
+
+Additional evaluator unit test
+------------------------------
+Test ID: TC-06
+Purpose: Verify explicit Deny precedence over a matching Allow.
+Command: python3 -B tests/test_explicit_deny.py
+Observed output:
+TC-06: PASS | Explicit Deny overrides Allow
+
+Result: 1/1 evaluator unit test passed.
+
+Validation scope:
+TC-01 through TC-05 compare two synthetic IAM policies.
+TC-06 verifies a specific behavior of the local Python evaluator.
+All tests were executed offline. No AWS authorization decisions were tested.
