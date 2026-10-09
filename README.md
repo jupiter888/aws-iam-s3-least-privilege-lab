@@ -110,3 +110,19 @@ A compromised workload identity could still read objects within its authorized s
 This project demonstrates an architecture-focused workflow: identify excessive permissions, model security threats, design a least-privilege control, validate expected decisions in a defined offline model, and document residual risks.
 
 The resulting artifacts provide a reproducible security assessment without relying on real credentials, production infrastructure, or confidential data.
+
+## License and Copyright
+
+This repository uses separate licensing terms for implementation code and architecture documentation.
+
+**Code and synthetic IAM policies — MIT License**
+
+The contents of `tests/` and `policies/` are available under the [MIT License](CODE-LICENSE.md).
+
+**Architecture documentation — All Rights Reserved**
+
+Original architecture diagrams, threat models, security assessments, technical reports, and supporting documentation are Copyright © 2026 Daniel Tracy. All rights reserved.
+
+These materials may not be reproduced, redistributed, modified, or republished without prior written permission, except as permitted by applicable law.
+
+See the [Documentation Copyright Notice](evidence/documentation/NOTICE.md) for details.
