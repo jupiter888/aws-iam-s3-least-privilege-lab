@@ -1,5 +1,7 @@
 # Project 2 — AWS IAM & S3 Least-Privilege Security Lab
 
+**AWS IAM Security | Amazon S3 Security | Least Privilege | Access Control | IAM Policy Hardening | Cloud Security Architecture**
+
 ## Overview
 
 An architecture-level security assessment of excessive Amazon S3 permissions assigned to a fictional research application's AWS IAM role.
